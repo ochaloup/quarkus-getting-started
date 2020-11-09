@@ -1,6 +1,5 @@
 package org.acme.quickstart;
 
-import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -11,7 +10,6 @@ public class GreetingResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    @Transactional
     public String hello() {
         String saveMe = "something";
         return saveMe;
