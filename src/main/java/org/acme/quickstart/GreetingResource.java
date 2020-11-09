@@ -18,6 +18,9 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     @Transactional
     public String hello() {
+        Recording r = new Recording();
+        r.name = "franta";
+        r.persist();
         return "something";
     }
 }
