@@ -14,5 +14,6 @@ public class TaskBean {
     void schedule() {
         Task task = new Task();
         task.persist();
+        System.out.println("HEY");
     }
 }
