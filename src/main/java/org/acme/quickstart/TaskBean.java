@@ -1,10 +1,8 @@
 package org.acme.quickstart;
 
-import javax.enterprise.context.ApplicationScoped;
-
-import javax.transaction.Transactional;
-
 import io.quarkus.scheduler.Scheduled;
+
+import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class TaskBean {
